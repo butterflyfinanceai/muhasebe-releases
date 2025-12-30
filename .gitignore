@@ -1,0 +1,62 @@
+# ================================================
+# ⚠️ UYARI: KAYNAK KOD GİZLİDİR!
+# Bu .gitignore dosyası kaynak kodun yanlışlıkla
+# GitHub'a push edilmesini engellemek için ayarlanmıştır.
+# ================================================
+
+# ===========================================
+# 🔒 KAYNAK KOD - KESİNLİKLE PUSH EDİLMEMELİ
+# ===========================================
+src/
+electron/
+dist/
+netlify/
+scripts/
+drizzle/
+public/
+resources/
+build/
+
+# Yapılandırma dosyaları
+*.ts
+*.tsx
+*.css
+*.html
+!README.md
+!package.json
+
+# Firebase (gizli kurallar)
+firebase.json
+firestore.rules
+.firebaserc
+
+# Environment ve gizli dosyalar
+.env
+.env.*
+*.local
+
+# Dependencies
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+
+# Build artifacts (bunlar release olarak ayrıca yüklenir)
+dist-electron/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# ===========================================
+# ✅ İZİN VERİLEN DOSYALAR (push edilebilir)
+# ===========================================
+# README.md
+# package.json (minimal bilgi)
+# LICENSE (varsa)
+# SOURCE_CODE_WARNING.md
